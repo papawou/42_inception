@@ -1,0 +1,15 @@
+services:
+  mariadb:
+    build: ./requirements/mariadb
+    environment:
+      - MYSQL_DATABASE=wordpress
+      - MYSQL_ROOT_PASSWORD=password
+  wordpress:
+    build: ./requirements/wordpress
+    ports:
+      - 80:80
+    links:
+      - mariadb:mysql
+    environment:
+      - WORDPRESS_DB_PASSWORD=password
+      - WORDPRESS_DB_USER=root
