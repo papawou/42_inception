@@ -1,15 +1,35 @@
 services:
+  nginx:
+    build: ./requirements/nginx
+    volumes:
+      - ./requirements/conf/conf.d:/etc/nginx/conf.d
+      - wordpress_folder:/var/www/html/wordpress
+    ports:
+      - 8000:80
+    links:
+     - wordpress
   mariadb:
     build: ./requirements/mariadb
     environment:
-      - MYSQL_DATABASE=wordpress
-      - MYSQL_ROOT_PASSWORD=password
+      - MARIADB_ROOT_PASSWORD=root
+      - MARIADB_DATABASE=${DB_NAME}
+      - MARIADB_USER=${DB_USER}
+      - MARIADB_PASSWORD=${DB_PASSWORD}
   wordpress:
     build: ./requirements/wordpress
+    stdin_open: true 
+    tty: true
     ports:
-      - 80:80
+      - 9000:9000
     links:
       - mariadb:mysql
     environment:
-      - WORDPRESS_DB_PASSWORD=password
-      - WORDPRESS_DB_USER=root
+      - WP_DBNAME=${DB_NAME}
+      - WP_DBUSER=${DB_USER}
+      - WP_DBPASSWORD=${DB_PASSWORD}
+    depends_on:
+      - mariadb
+    volumes:
+      - wordpress_folder:/tmp/wpclidemo.dev
+volumes:
+  wordpress_folder:
