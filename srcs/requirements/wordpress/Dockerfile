@@ -1,4 +1,5 @@
 FROM debian:buster
+ARG WP_FOLDER
 
 RUN apt-get update && apt-get install -y curl\
     php \
@@ -6,12 +7,17 @@ RUN apt-get update && apt-get install -y curl\
     php-mysql \
     mariadb-client
 
+RUN mkdir -p /run/php/php7.3-fpm/
+COPY /conf/www.conf /etc/php/7.3/fpm/pool.d/
+
 RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar \
     && chmod +x wp-cli.phar \
     && mv wp-cli.phar /usr/local/bin/wp
 
-COPY --chmod=777 /conf/configure.sh /tmp
-COPY /conf/www.conf /etc/php/7.3/fpm/pool.d/
-WORKDIR /tmp
+COPY --chmod=777 /tools/configure.sh /tmp/
 
-CMD ./configure.sh
+COPY conf/test.php /var/www/html/wordpress/
+COPY conf/test.php /var/www/html/
+
+WORKDIR $WP_FOLDER
+CMD /tmp/configure.sh

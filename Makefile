@@ -1,18 +1,13 @@
-
-NAME := name_makefile
-
+SRC := /srcs/docker_compose
 
 all : NAME
 
 SRC := docker_compose.yml
 
-NAME : SRC
-	docker-docker_compose
-
-clean : 
+clean :
 
 fclean : clean
 
 re : fclean all
 
-.PHONY : all clean fclean re $(NAME)
+.PHONY : all clean fclean re

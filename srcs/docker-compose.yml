@@ -1,13 +1,15 @@
 services:
   nginx:
+    depends_on:
+      - wordpress
     build: ./requirements/nginx
     volumes:
-      - ./requirements/conf/conf.d:/etc/nginx/conf.d
-      - wordpress_folder:/var/www/html/wordpress
+      - wordpress_folder:${PUBLIC_FOLDER}
+      - ./logs/nginx/error.log:/tmp/nginx/error.log
     ports:
-      - 8000:80
+      - 8080:80
     links:
-     - wordpress
+      - wordpress
   mariadb:
     build: ./requirements/mariadb
     environment:
@@ -16,20 +18,26 @@ services:
       - MARIADB_USER=${DB_USER}
       - MARIADB_PASSWORD=${DB_PASSWORD}
   wordpress:
-    build: ./requirements/wordpress
-    stdin_open: true 
-    tty: true
+    depends_on:
+      - mariadb
+    build:
+      context: ./requirements/wordpress
+      args:
+        - WP_FOLDER=${PUBLIC_FOLDER}
     ports:
       - 9000:9000
-    links:
-      - mariadb:mysql
+    stdin_open: true 
+    tty: true
     environment:
       - WP_DBNAME=${DB_NAME}
       - WP_DBUSER=${DB_USER}
       - WP_DBPASSWORD=${DB_PASSWORD}
-    depends_on:
-      - mariadb
+      - WP_FOLDER=${PUBLIC_FOLDER}
     volumes:
-      - wordpress_folder:/tmp/wpclidemo.dev
+      - wordpress_folder:${PUBLIC_FOLDER}
+      - ./logs/php/www.access.log:/tmp/php/www.access.log
+    links:
+      - mariadb:mysql
+
 volumes:
   wordpress_folder:
