@@ -5,7 +5,6 @@ services:
     build: ./requirements/nginx
     volumes:
       - wordpress_folder:${PUBLIC_FOLDER}
-      - ./logs/nginx/error.log:/tmp/nginx/error.log
     ports:
       - 443:443
     links:
@@ -33,7 +32,6 @@ services:
       - WP_FOLDER=${PUBLIC_FOLDER}
     volumes:
       - wordpress_folder:${PUBLIC_FOLDER}
-      - ./logs/php/www.access.log:/tmp/php/www.access.log
     links:
       - mariadb:mysql
 
