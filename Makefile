@@ -1,12 +1,16 @@
-SRC := /srcs/docker_compose
+SRC := ./srcs/docker-compose.yml
 
-all : NAME
+all :
+	docker-compose -f ${SRC} up
 
-SRC := docker_compose.yml
+buid:
+	docker-compose -f ${SRC} build
 
-clean :
+down:
+	docker-compose -f ${SRC} down
 
-fclean : clean
+fclean : down
+	docker system prune --volumes -a -f
 
 re : fclean all
 

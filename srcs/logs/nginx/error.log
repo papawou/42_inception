@@ -41,3 +41,939 @@
 2023/08/06 22:29:45 [error] 28#28: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.28.0.1, server: , request: "GET /test-config.php HTTP/1.1", upstream: "fastcgi://172.28.0.3:9000", host: "localhost:8080"
 2023/08/06 22:36:11 [error] 28#28: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.29.0.1, server: , request: "GET /test.php HTTP/1.1", upstream: "fastcgi://172.29.0.3:9000", host: "localhost:8080"
 2023/08/06 22:39:04 [error] 30#30: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.30.0.1, server: , request: "GET /wordpress/wp-config.php HTTP/1.1", upstream: "fastcgi://172.30.0.3:9000", host: "localhost:8080"
+2023/08/07 16:53:50 [error] 29#29: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: , request: "GET /test.php HTTP/1.1", upstream: "fastcgi://172.19.0.3:9000", host: "localhost:8080"
+2023/08/07 16:53:51 [error] 29#29: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: , request: "GET /test.php HTTP/1.1", upstream: "fastcgi://172.19.0.3:9000", host: "localhost:8080"
+2023/08/07 16:53:52 [error] 29#29: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: , request: "GET /test.php HTTP/1.1", upstream: "fastcgi://172.19.0.3:9000", host: "localhost:8080"
+2023/08/07 16:53:52 [error] 29#29: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: , request: "GET /test.php HTTP/1.1", upstream: "fastcgi://172.19.0.3:9000", host: "localhost:8080"
+2023/08/07 16:54:36 [error] 29#29: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /test.php HTTP/1.1", upstream: "fastcgi://172.20.0.3:9000", host: "localhost:8080"
+2023/08/07 16:54:37 [error] 29#29: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /test.php HTTP/1.1", upstream: "fastcgi://172.20.0.3:9000", host: "localhost:8080"
+2023/08/07 16:54:37 [error] 29#29: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /test.php HTTP/1.1", upstream: "fastcgi://172.20.0.3:9000", host: "localhost:8080"
+2023/08/07 16:54:44 [info] 29#29: *1 client 172.20.0.1 closed keepalive connection
+2023/08/07 16:54:44 [error] 28#28: *5 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /test.php HTTP/1.1", upstream: "fastcgi://172.20.0.3:9000", host: "localhost:8080"
+2023/08/07 16:54:44 [info] 28#28: *5 client 172.20.0.1 closed keepalive connection
+2023/08/07 16:54:44 [error] 30#30: *7 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /test.php HTTP/1.1", upstream: "fastcgi://172.20.0.3:9000", host: "localhost:8080"
+2023/08/07 16:54:45 [info] 30#30: *7 client 172.20.0.1 closed keepalive connection
+2023/08/07 16:54:45 [error] 31#31: *9 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /test.php HTTP/1.1", upstream: "fastcgi://172.20.0.3:9000", host: "localhost:8080"
+2023/08/07 16:54:45 [info] 31#31: *9 client 172.20.0.1 closed keepalive connection
+2023/08/07 16:54:45 [error] 33#33: *11 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /test.php HTTP/1.1", upstream: "fastcgi://172.20.0.3:9000", host: "localhost:8080"
+2023/08/07 16:56:16 [error] 30#30: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.21.0.1, server: , request: "GET /test.php HTTP/1.1", upstream: "fastcgi://172.21.0.3:9000", host: "localhost:8080"
+2023/08/07 17:06:03 [info] 28#28: *1 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.23.0.1, server: , request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.23.0.3:9000", host: "localhost:8080"
+2023/08/07 17:06:12 [info] 29#29: *3 client closed connection while waiting for request, client: 172.23.0.1, server: 0.0.0.0:80
+2023/08/07 17:06:20 [info] 30#30: *4 client closed connection while waiting for request, client: 172.23.0.1, server: 0.0.0.0:80
+2023/08/07 17:08:28 [info] 32#32: *5 client closed connection while waiting for request, client: 172.23.0.1, server: 0.0.0.0:80
+2023/08/07 17:10:29 [info] 33#33: *6 client closed connection while waiting for request, client: 172.23.0.1, server: 0.0.0.0:80
+2023/08/07 17:10:32 [error] 31#31: *7 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.23.0.1, server: , request: "GET /wp-admin/info.php HTTP/1.1", upstream: "fastcgi://172.23.0.3:9000", host: "localhost:8080"
+2023/08/07 17:18:51 [error] 28#28: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.25.0.1, server: , request: "GET /wp-admin/info.php HTTP/1.1", upstream: "fastcgi://172.25.0.3:9000", host: "localhost:8080"
+2023/08/07 17:24:13 [info] 29#29: *1 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 172.26.0.1, server: , request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.26.0.3:9000", host: "localhost:8080"
+2023/08/07 19:25:53 [info] 29#29: *1 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2023/08/07 20:02:55 [error] 29#29: *1 open() "/var/www/html/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/wp-config.php"
+2023/08/07 20:02:55 [info] 29#29: *1 client 172.19.0.1 closed keepalive connection
+2023/08/07 20:02:58 [info] 28#28: *3 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.19.0.1, server: , request: "GET / HTTP/1.1", upstream: "fastcgi://172.19.0.3:9000", host: "localhost:8080"
+2023/08/07 20:04:21 [info] 30#30: *5 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.19.0.1, server: , request: "GET / HTTP/1.1", upstream: "fastcgi://172.19.0.3:9000", host: "localhost:8080"
+2023/08/07 20:09:36 [error] 28#28: *1 open() "/var/www/html/favicon.ico" failed (2: No such file or directory), client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/test.php"
+2023/08/07 20:09:36 [info] 28#28: *1 client 172.20.0.1 closed keepalive connection
+2023/08/07 20:10:10 [info] 29#29: *3 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.20.0.1, server: , request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.3:9000", host: "localhost:8080"
+2023/08/07 20:26:59 [debug] 8#8: epoll add event: fd:8 op:1 ev:10000001
+2023/08/07 20:26:59 [debug] 8#8: epoll add event: fd:9 op:1 ev:10000001
+2023/08/07 20:26:59 [debug] 9#9: epoll add event: fd:8 op:1 ev:10000001
+2023/08/07 20:26:59 [debug] 9#9: epoll add event: fd:9 op:1 ev:10000001
+2023/08/07 20:26:59 [debug] 10#10: epoll add event: fd:8 op:1 ev:10000001
+2023/08/07 20:26:59 [debug] 11#11: epoll add event: fd:8 op:1 ev:10000001
+2023/08/07 20:26:59 [debug] 11#11: epoll add event: fd:9 op:1 ev:10000001
+2023/08/07 20:26:59 [debug] 12#12: epoll add event: fd:8 op:1 ev:10000001
+2023/08/07 20:26:59 [debug] 12#12: epoll add event: fd:9 op:1 ev:10000001
+2023/08/07 20:26:59 [debug] 13#13: epoll add event: fd:8 op:1 ev:10000001
+2023/08/07 20:26:59 [debug] 10#10: epoll add event: fd:9 op:1 ev:10000001
+2023/08/07 20:26:59 [debug] 13#13: epoll add event: fd:9 op:1 ev:10000001
+2023/08/07 20:32:50 [debug] 8#8: epoll add event: fd:8 op:1 ev:10000001
+2023/08/07 20:32:50 [debug] 7#7: epoll add event: fd:8 op:1 ev:10000001
+2023/08/07 20:32:50 [debug] 9#9: epoll add event: fd:8 op:1 ev:10000001
+2023/08/07 20:32:50 [debug] 10#10: epoll add event: fd:8 op:1 ev:10000001
+2023/08/07 20:32:50 [debug] 10#10: epoll add event: fd:9 op:1 ev:10000001
+2023/08/07 20:32:50 [debug] 11#11: epoll add event: fd:8 op:1 ev:10000001
+2023/08/07 20:32:50 [debug] 12#12: epoll add event: fd:8 op:1 ev:10000001
+2023/08/07 20:32:50 [debug] 8#8: epoll add event: fd:9 op:1 ev:10000001
+2023/08/07 20:32:50 [debug] 7#7: epoll add event: fd:9 op:1 ev:10000001
+2023/08/07 20:32:50 [debug] 9#9: epoll add event: fd:9 op:1 ev:10000001
+2023/08/07 20:32:50 [debug] 11#11: epoll add event: fd:9 op:1 ev:10000001
+2023/08/07 20:32:50 [debug] 12#12: epoll add event: fd:9 op:1 ev:10000001
+2023/08/07 20:34:58 [debug] 8#8: accept on 0.0.0.0:443, ready: 0
+2023/08/07 20:34:58 [debug] 8#8: posix_memalign: 000055F7563817D0:512 @16
+2023/08/07 20:34:58 [debug] 8#8: *1 accept: 172.23.0.1:61734 fd:19
+2023/08/07 20:34:58 [debug] 8#8: *1 event timer add: 19: 60000:5282496
+2023/08/07 20:34:58 [debug] 8#8: *1 reusable connection: 1
+2023/08/07 20:34:58 [debug] 8#8: *1 epoll add event: fd:19 op:1 ev:80002001
+2023/08/07 20:34:58 [debug] 8#8: *1 http check ssl handshake
+2023/08/07 20:34:58 [debug] 8#8: *1 http recv(): 1
+2023/08/07 20:34:58 [debug] 8#8: *1 https ssl handshake: 0x16
+2023/08/07 20:34:58 [debug] 8#8: *1 tcp_nodelay
+2023/08/07 20:34:58 [debug] 8#8: *1 SSL server name: "localhost"
+2023/08/07 20:34:58 [debug] 8#8: *1 SSL ALPN supported by client: h2
+2023/08/07 20:34:58 [debug] 8#8: *1 SSL ALPN supported by client: http/1.1
+2023/08/07 20:34:58 [debug] 8#8: *1 SSL ALPN selected: http/1.1
+2023/08/07 20:34:58 [debug] 8#8: *1 SSL_do_handshake: -1
+2023/08/07 20:34:58 [debug] 8#8: *1 SSL_get_error: 2
+2023/08/07 20:34:58 [debug] 8#8: *1 reusable connection: 0
+2023/08/07 20:34:58 [debug] 8#8: *1 SSL handshake handler: 0
+2023/08/07 20:34:58 [debug] 8#8: *1 SSL_do_handshake: -1
+2023/08/07 20:34:58 [debug] 8#8: *1 SSL_get_error: 1
+2023/08/07 20:34:58 [info] 8#8: *1 SSL_do_handshake() failed (SSL: error:14094412:SSL routines:ssl3_read_bytes:sslv3 alert bad certificate:SSL alert number 42) while SSL handshaking, client: 172.23.0.1, server: 0.0.0.0:443
+2023/08/07 20:34:58 [debug] 8#8: *1 close http connection: 19
+2023/08/07 20:34:58 [debug] 8#8: *1 event timer del: 19: 5282496
+2023/08/07 20:34:58 [debug] 8#8: *1 reusable connection: 0
+2023/08/07 20:34:58 [debug] 8#8: *1 free: 000055F7563817D0, unused: 151
+2023/08/07 20:34:59 [debug] 8#8: accept on 0.0.0.0:443, ready: 0
+2023/08/07 20:34:59 [debug] 8#8: posix_memalign: 000055F7563817D0:512 @16
+2023/08/07 20:34:59 [debug] 8#8: *2 accept: 172.23.0.1:61736 fd:19
+2023/08/07 20:34:59 [debug] 8#8: *2 event timer add: 19: 60000:5283037
+2023/08/07 20:34:59 [debug] 8#8: *2 reusable connection: 1
+2023/08/07 20:34:59 [debug] 8#8: *2 epoll add event: fd:19 op:1 ev:80002001
+2023/08/07 20:34:59 [debug] 8#8: *2 http check ssl handshake
+2023/08/07 20:34:59 [debug] 8#8: *2 http recv(): 1
+2023/08/07 20:34:59 [debug] 8#8: *2 https ssl handshake: 0x16
+2023/08/07 20:34:59 [debug] 8#8: *2 tcp_nodelay
+2023/08/07 20:34:59 [debug] 8#8: *2 SSL server name: "localhost"
+2023/08/07 20:34:59 [debug] 8#8: *2 SSL ALPN supported by client: h2
+2023/08/07 20:34:59 [debug] 8#8: *2 SSL ALPN supported by client: http/1.1
+2023/08/07 20:34:59 [debug] 8#8: *2 SSL ALPN selected: http/1.1
+2023/08/07 20:34:59 [debug] 8#8: *2 SSL_do_handshake: -1
+2023/08/07 20:34:59 [debug] 8#8: *2 SSL_get_error: 2
+2023/08/07 20:34:59 [debug] 8#8: *2 reusable connection: 0
+2023/08/07 20:34:59 [debug] 8#8: *2 SSL handshake handler: 0
+2023/08/07 20:34:59 [debug] 8#8: *2 SSL_do_handshake: -1
+2023/08/07 20:34:59 [debug] 8#8: *2 SSL_get_error: 1
+2023/08/07 20:34:59 [info] 8#8: *2 SSL_do_handshake() failed (SSL: error:14094412:SSL routines:ssl3_read_bytes:sslv3 alert bad certificate:SSL alert number 42) while SSL handshaking, client: 172.23.0.1, server: 0.0.0.0:443
+2023/08/07 20:34:59 [debug] 8#8: *2 close http connection: 19
+2023/08/07 20:34:59 [debug] 8#8: *2 event timer del: 19: 5283037
+2023/08/07 20:34:59 [debug] 8#8: *2 reusable connection: 0
+2023/08/07 20:34:59 [debug] 8#8: *2 free: 000055F7563817D0, unused: 151
+2023/08/07 20:34:59 [debug] 8#8: accept on 0.0.0.0:443, ready: 0
+2023/08/07 20:34:59 [debug] 8#8: posix_memalign: 000055F7563817D0:512 @16
+2023/08/07 20:34:59 [debug] 8#8: *3 accept: 172.23.0.1:61738 fd:19
+2023/08/07 20:34:59 [debug] 8#8: *3 event timer add: 19: 60000:5283284
+2023/08/07 20:34:59 [debug] 8#8: *3 reusable connection: 1
+2023/08/07 20:34:59 [debug] 8#8: *3 epoll add event: fd:19 op:1 ev:80002001
+2023/08/07 20:34:59 [debug] 8#8: *3 http check ssl handshake
+2023/08/07 20:34:59 [debug] 8#8: *3 http recv(): 1
+2023/08/07 20:34:59 [debug] 8#8: *3 https ssl handshake: 0x16
+2023/08/07 20:34:59 [debug] 8#8: *3 tcp_nodelay
+2023/08/07 20:34:59 [debug] 8#8: *3 SSL server name: "localhost"
+2023/08/07 20:34:59 [debug] 8#8: *3 SSL ALPN supported by client: h2
+2023/08/07 20:34:59 [debug] 8#8: *3 SSL ALPN supported by client: http/1.1
+2023/08/07 20:34:59 [debug] 8#8: *3 SSL ALPN selected: http/1.1
+2023/08/07 20:34:59 [debug] 8#8: *3 SSL_do_handshake: -1
+2023/08/07 20:34:59 [debug] 8#8: *3 SSL_get_error: 2
+2023/08/07 20:34:59 [debug] 8#8: *3 reusable connection: 0
+2023/08/07 20:34:59 [debug] 8#8: *3 SSL handshake handler: 0
+2023/08/07 20:34:59 [debug] 8#8: *3 SSL_do_handshake: -1
+2023/08/07 20:34:59 [debug] 8#8: *3 SSL_get_error: 1
+2023/08/07 20:34:59 [info] 8#8: *3 SSL_do_handshake() failed (SSL: error:14094412:SSL routines:ssl3_read_bytes:sslv3 alert bad certificate:SSL alert number 42) while SSL handshaking, client: 172.23.0.1, server: 0.0.0.0:443
+2023/08/07 20:34:59 [debug] 8#8: *3 close http connection: 19
+2023/08/07 20:34:59 [debug] 8#8: *3 event timer del: 19: 5283284
+2023/08/07 20:34:59 [debug] 8#8: *3 reusable connection: 0
+2023/08/07 20:34:59 [debug] 8#8: *3 free: 000055F7563817D0, unused: 151
+2023/08/07 20:34:59 [debug] 8#8: accept on 0.0.0.0:443, ready: 0
+2023/08/07 20:34:59 [debug] 8#8: posix_memalign: 000055F7563817D0:512 @16
+2023/08/07 20:34:59 [debug] 8#8: *4 accept: 172.23.0.1:61740 fd:19
+2023/08/07 20:34:59 [debug] 8#8: *4 event timer add: 19: 60000:5283489
+2023/08/07 20:34:59 [debug] 8#8: *4 reusable connection: 1
+2023/08/07 20:34:59 [debug] 8#8: *4 epoll add event: fd:19 op:1 ev:80002001
+2023/08/07 20:34:59 [debug] 8#8: *4 http check ssl handshake
+2023/08/07 20:34:59 [debug] 8#8: *4 http recv(): 1
+2023/08/07 20:34:59 [debug] 8#8: *4 https ssl handshake: 0x16
+2023/08/07 20:34:59 [debug] 8#8: *4 tcp_nodelay
+2023/08/07 20:34:59 [debug] 8#8: *4 SSL server name: "localhost"
+2023/08/07 20:34:59 [debug] 8#8: *4 SSL ALPN supported by client: h2
+2023/08/07 20:34:59 [debug] 8#8: *4 SSL ALPN supported by client: http/1.1
+2023/08/07 20:34:59 [debug] 8#8: *4 SSL ALPN selected: http/1.1
+2023/08/07 20:34:59 [debug] 8#8: *4 SSL_do_handshake: -1
+2023/08/07 20:34:59 [debug] 8#8: *4 SSL_get_error: 2
+2023/08/07 20:34:59 [debug] 8#8: *4 reusable connection: 0
+2023/08/07 20:34:59 [debug] 8#8: *4 SSL handshake handler: 0
+2023/08/07 20:34:59 [debug] 8#8: *4 SSL_do_handshake: -1
+2023/08/07 20:34:59 [debug] 8#8: *4 SSL_get_error: 1
+2023/08/07 20:34:59 [info] 8#8: *4 SSL_do_handshake() failed (SSL: error:14094412:SSL routines:ssl3_read_bytes:sslv3 alert bad certificate:SSL alert number 42) while SSL handshaking, client: 172.23.0.1, server: 0.0.0.0:443
+2023/08/07 20:34:59 [debug] 8#8: *4 close http connection: 19
+2023/08/07 20:34:59 [debug] 8#8: *4 event timer del: 19: 5283489
+2023/08/07 20:34:59 [debug] 8#8: *4 reusable connection: 0
+2023/08/07 20:34:59 [debug] 8#8: *4 free: 000055F7563817D0, unused: 151
+2023/08/07 20:35:00 [debug] 8#8: accept on 0.0.0.0:443, ready: 0
+2023/08/07 20:35:00 [debug] 8#8: posix_memalign: 000055F7563817D0:512 @16
+2023/08/07 20:35:00 [debug] 8#8: *5 accept: 172.23.0.1:61742 fd:19
+2023/08/07 20:35:00 [debug] 8#8: *5 event timer add: 19: 60000:5283914
+2023/08/07 20:35:00 [debug] 8#8: *5 reusable connection: 1
+2023/08/07 20:35:00 [debug] 8#8: *5 epoll add event: fd:19 op:1 ev:80002001
+2023/08/07 20:35:00 [debug] 8#8: *5 http check ssl handshake
+2023/08/07 20:35:00 [debug] 8#8: *5 http recv(): 1
+2023/08/07 20:35:00 [debug] 8#8: *5 https ssl handshake: 0x16
+2023/08/07 20:35:00 [debug] 8#8: *5 tcp_nodelay
+2023/08/07 20:35:00 [debug] 8#8: *5 SSL server name: "localhost"
+2023/08/07 20:35:00 [debug] 8#8: *5 SSL ALPN supported by client: h2
+2023/08/07 20:35:00 [debug] 8#8: *5 SSL ALPN supported by client: http/1.1
+2023/08/07 20:35:00 [debug] 8#8: *5 SSL ALPN selected: http/1.1
+2023/08/07 20:35:00 [debug] 8#8: *5 SSL_do_handshake: -1
+2023/08/07 20:35:00 [debug] 8#8: *5 SSL_get_error: 2
+2023/08/07 20:35:00 [debug] 8#8: *5 reusable connection: 0
+2023/08/07 20:35:00 [debug] 8#8: *5 SSL handshake handler: 0
+2023/08/07 20:35:00 [debug] 8#8: *5 SSL_do_handshake: -1
+2023/08/07 20:35:00 [debug] 8#8: *5 SSL_get_error: 1
+2023/08/07 20:35:00 [info] 8#8: *5 SSL_do_handshake() failed (SSL: error:14094412:SSL routines:ssl3_read_bytes:sslv3 alert bad certificate:SSL alert number 42) while SSL handshaking, client: 172.23.0.1, server: 0.0.0.0:443
+2023/08/07 20:35:00 [debug] 8#8: *5 close http connection: 19
+2023/08/07 20:35:00 [debug] 8#8: *5 event timer del: 19: 5283914
+2023/08/07 20:35:00 [debug] 8#8: *5 reusable connection: 0
+2023/08/07 20:35:00 [debug] 8#8: *5 free: 000055F7563817D0, unused: 151
+2023/08/07 20:35:05 [debug] 8#8: accept on 0.0.0.0:443, ready: 0
+2023/08/07 20:35:05 [debug] 8#8: posix_memalign: 000055F7563817D0:512 @16
+2023/08/07 20:35:05 [debug] 8#8: *6 accept: 172.23.0.1:61744 fd:19
+2023/08/07 20:35:05 [debug] 8#8: *6 event timer add: 19: 60000:5289356
+2023/08/07 20:35:05 [debug] 8#8: *6 reusable connection: 1
+2023/08/07 20:35:05 [debug] 8#8: *6 epoll add event: fd:19 op:1 ev:80002001
+2023/08/07 20:35:05 [debug] 8#8: *6 http check ssl handshake
+2023/08/07 20:35:05 [debug] 8#8: *6 http recv(): 1
+2023/08/07 20:35:05 [debug] 8#8: *6 https ssl handshake: 0x16
+2023/08/07 20:35:05 [debug] 8#8: *6 tcp_nodelay
+2023/08/07 20:35:05 [debug] 8#8: *6 SSL server name: "localhost"
+2023/08/07 20:35:05 [debug] 8#8: *6 SSL ALPN supported by client: h2
+2023/08/07 20:35:05 [debug] 8#8: *6 SSL ALPN supported by client: http/1.1
+2023/08/07 20:35:05 [debug] 8#8: *6 SSL ALPN selected: http/1.1
+2023/08/07 20:35:05 [debug] 8#8: *6 SSL_do_handshake: -1
+2023/08/07 20:35:05 [debug] 8#8: *6 SSL_get_error: 2
+2023/08/07 20:35:05 [debug] 8#8: *6 reusable connection: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 SSL handshake handler: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 SSL_do_handshake: 1
+2023/08/07 20:35:05 [debug] 8#8: *6 SSL: TLSv1.3, cipher: "TLS_AES_256_GCM_SHA384 TLSv1.3 Kx=any Au=any Enc=AESGCM(256) Mac=AEAD"
+2023/08/07 20:35:05 [debug] 8#8: *6 reusable connection: 1
+2023/08/07 20:35:05 [debug] 8#8: *6 http wait request handler
+2023/08/07 20:35:05 [debug] 8#8: *6 malloc: 000055F7563821E0:1024
+2023/08/07 20:35:05 [debug] 8#8: *6 SSL_read: 505
+2023/08/07 20:35:05 [debug] 8#8: *6 SSL_read: -1
+2023/08/07 20:35:05 [debug] 8#8: *6 SSL_get_error: 2
+2023/08/07 20:35:05 [debug] 8#8: *6 reusable connection: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 posix_memalign: 000055F756398E10:4096 @16
+2023/08/07 20:35:05 [debug] 8#8: *6 http process request line
+2023/08/07 20:35:05 [debug] 8#8: *6 http request line: "GET / HTTP/1.1"
+2023/08/07 20:35:05 [debug] 8#8: *6 http uri: "/"
+2023/08/07 20:35:05 [debug] 8#8: *6 http args: ""
+2023/08/07 20:35:05 [debug] 8#8: *6 http exten: ""
+2023/08/07 20:35:05 [debug] 8#8: *6 posix_memalign: 000055F7563A2450:4096 @16
+2023/08/07 20:35:05 [debug] 8#8: *6 http process request header line
+2023/08/07 20:35:05 [debug] 8#8: *6 http header: "Host: localhost"
+2023/08/07 20:35:05 [debug] 8#8: *6 http header: "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/113.0"
+2023/08/07 20:35:05 [debug] 8#8: *6 http header: "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+2023/08/07 20:35:05 [debug] 8#8: *6 http header: "Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"
+2023/08/07 20:35:05 [debug] 8#8: *6 http header: "Accept-Encoding: gzip, deflate, br"
+2023/08/07 20:35:05 [debug] 8#8: *6 http header: "Connection: keep-alive"
+2023/08/07 20:35:05 [debug] 8#8: *6 http header: "Cookie: wp-settings-time-1=1689537084"
+2023/08/07 20:35:05 [debug] 8#8: *6 http header: "Upgrade-Insecure-Requests: 1"
+2023/08/07 20:35:05 [debug] 8#8: *6 http header: "Sec-Fetch-Dest: document"
+2023/08/07 20:35:05 [debug] 8#8: *6 http header: "Sec-Fetch-Mode: navigate"
+2023/08/07 20:35:05 [debug] 8#8: *6 http header: "Sec-Fetch-Site: none"
+2023/08/07 20:35:05 [debug] 8#8: *6 http header: "Sec-Fetch-User: ?1"
+2023/08/07 20:35:05 [debug] 8#8: *6 http header done
+2023/08/07 20:35:05 [debug] 8#8: *6 event timer del: 19: 5289356
+2023/08/07 20:35:05 [debug] 8#8: *6 generic phase: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 rewrite phase: 1
+2023/08/07 20:35:05 [debug] 8#8: *6 test location: ~ "[^/]\.php(/|$)"
+2023/08/07 20:35:05 [debug] 8#8: *6 using configuration ""
+2023/08/07 20:35:05 [debug] 8#8: *6 http cl:-1 max:1048576
+2023/08/07 20:35:05 [debug] 8#8: *6 rewrite phase: 3
+2023/08/07 20:35:05 [debug] 8#8: *6 post rewrite phase: 4
+2023/08/07 20:35:05 [debug] 8#8: *6 generic phase: 5
+2023/08/07 20:35:05 [debug] 8#8: *6 generic phase: 6
+2023/08/07 20:35:05 [debug] 8#8: *6 generic phase: 7
+2023/08/07 20:35:05 [debug] 8#8: *6 access phase: 8
+2023/08/07 20:35:05 [debug] 8#8: *6 access phase: 9
+2023/08/07 20:35:05 [debug] 8#8: *6 access phase: 10
+2023/08/07 20:35:05 [debug] 8#8: *6 access phase: 11
+2023/08/07 20:35:05 [debug] 8#8: *6 post access phase: 12
+2023/08/07 20:35:05 [debug] 8#8: *6 generic phase: 13
+2023/08/07 20:35:05 [debug] 8#8: *6 generic phase: 14
+2023/08/07 20:35:05 [debug] 8#8: *6 generic phase: 15
+2023/08/07 20:35:05 [debug] 8#8: *6 content phase: 16
+2023/08/07 20:35:05 [debug] 8#8: *6 content phase: 17
+2023/08/07 20:35:05 [debug] 8#8: *6 open index "/var/www/html/index.php"
+2023/08/07 20:35:05 [debug] 8#8: *6 internal redirect: "/index.php?"
+2023/08/07 20:35:05 [debug] 8#8: *6 rewrite phase: 1
+2023/08/07 20:35:05 [debug] 8#8: *6 test location: ~ "[^/]\.php(/|$)"
+2023/08/07 20:35:05 [debug] 8#8: *6 using configuration "[^/]\.php(/|$)"
+2023/08/07 20:35:05 [debug] 8#8: *6 http cl:-1 max:1048576
+2023/08/07 20:35:05 [debug] 8#8: *6 rewrite phase: 3
+2023/08/07 20:35:05 [debug] 8#8: *6 post rewrite phase: 4
+2023/08/07 20:35:05 [debug] 8#8: *6 generic phase: 5
+2023/08/07 20:35:05 [debug] 8#8: *6 generic phase: 6
+2023/08/07 20:35:05 [debug] 8#8: *6 generic phase: 7
+2023/08/07 20:35:05 [debug] 8#8: *6 access phase: 8
+2023/08/07 20:35:05 [debug] 8#8: *6 access phase: 9
+2023/08/07 20:35:05 [debug] 8#8: *6 access phase: 10
+2023/08/07 20:35:05 [debug] 8#8: *6 access phase: 11
+2023/08/07 20:35:05 [debug] 8#8: *6 post access phase: 12
+2023/08/07 20:35:05 [debug] 8#8: *6 generic phase: 13
+2023/08/07 20:35:05 [debug] 8#8: *6 generic phase: 14
+2023/08/07 20:35:05 [debug] 8#8: *6 try files handler
+2023/08/07 20:35:05 [debug] 8#8: *6 http script var: "/index.php"
+2023/08/07 20:35:05 [debug] 8#8: *6 trying to use file: "/index.php" "/var/www/html/index.php"
+2023/08/07 20:35:05 [debug] 8#8: *6 try file uri: "/index.php"
+2023/08/07 20:35:05 [debug] 8#8: *6 generic phase: 15
+2023/08/07 20:35:05 [debug] 8#8: *6 http init upstream, client timer: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 epoll add event: fd:19 op:3 ev:80002005
+2023/08/07 20:35:05 [debug] 8#8: *6 http script copy: "QUERY_STRING"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "QUERY_STRING: "
+2023/08/07 20:35:05 [debug] 8#8: *6 http script copy: "REQUEST_METHOD"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script var: "GET"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "REQUEST_METHOD: GET"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script copy: "CONTENT_TYPE"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "CONTENT_TYPE: "
+2023/08/07 20:35:05 [debug] 8#8: *6 http script copy: "CONTENT_LENGTH"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "CONTENT_LENGTH: "
+2023/08/07 20:35:05 [debug] 8#8: *6 http script copy: "SCRIPT_NAME"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script var: "/index.php"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "SCRIPT_NAME: /index.php"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script copy: "REQUEST_URI"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script var: "/"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "REQUEST_URI: /"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script copy: "DOCUMENT_URI"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script var: "/index.php"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "DOCUMENT_URI: /index.php"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script copy: "DOCUMENT_ROOT"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script var: "/var/www/html"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "DOCUMENT_ROOT: /var/www/html"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script copy: "SERVER_PROTOCOL"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script var: "HTTP/1.1"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "SERVER_PROTOCOL: HTTP/1.1"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script copy: "REQUEST_SCHEME"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script var: "https"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "REQUEST_SCHEME: https"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script copy: "HTTPS"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script var: "on"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "HTTPS: on"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script copy: "GATEWAY_INTERFACE"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script copy: "CGI/1.1"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "GATEWAY_INTERFACE: CGI/1.1"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script copy: "SERVER_SOFTWARE"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script copy: "nginx/"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script var: "1.14.2"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "SERVER_SOFTWARE: nginx/1.14.2"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script copy: "REMOTE_ADDR"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script var: "172.23.0.1"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "REMOTE_ADDR: 172.23.0.1"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script copy: "REMOTE_PORT"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script var: "61744"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "REMOTE_PORT: 61744"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script copy: "SERVER_ADDR"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script var: "172.23.0.4"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "SERVER_ADDR: 172.23.0.4"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script copy: "SERVER_PORT"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script var: "443"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "SERVER_PORT: 443"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script copy: "SERVER_NAME"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script var: "www.login.1337.ma"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "SERVER_NAME: www.login.1337.ma"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script copy: "REDIRECT_STATUS"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script copy: "200"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "REDIRECT_STATUS: 200"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script copy: "SCRIPT_FILENAME"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script var: "/var/www/html"
+2023/08/07 20:35:05 [debug] 8#8: *6 http script var: "/index.php"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "SCRIPT_FILENAME: /var/www/html/index.php"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "HTTP_HOST: localhost"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/113.0"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "HTTP_ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "HTTP_ACCEPT_LANGUAGE: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "HTTP_ACCEPT_ENCODING: gzip, deflate, br"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "HTTP_CONNECTION: keep-alive"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "HTTP_COOKIE: wp-settings-time-1=1689537084"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "HTTP_UPGRADE_INSECURE_REQUESTS: 1"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "HTTP_SEC_FETCH_DEST: document"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "HTTP_SEC_FETCH_MODE: navigate"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "HTTP_SEC_FETCH_SITE: none"
+2023/08/07 20:35:05 [debug] 8#8: *6 fastcgi param: "HTTP_SEC_FETCH_USER: ?1"
+2023/08/07 20:35:05 [debug] 8#8: *6 http cleanup add: 000055F7563A32A0
+2023/08/07 20:35:05 [debug] 8#8: *6 get rr peer, try: 1
+2023/08/07 20:35:05 [debug] 8#8: *6 stream socket 20
+2023/08/07 20:35:05 [debug] 8#8: *6 epoll add connection: fd:20 ev:80002005
+2023/08/07 20:35:05 [debug] 8#8: *6 connect to 172.23.0.3:9000, fd:20 #7
+2023/08/07 20:35:05 [debug] 8#8: *6 http upstream connect: -2
+2023/08/07 20:35:05 [debug] 8#8: *6 posix_memalign: 000055F7563A47D0:128 @16
+2023/08/07 20:35:05 [debug] 8#8: *6 event timer add: 20: 60000:5289365
+2023/08/07 20:35:05 [debug] 8#8: *6 http finalize request: -4, "/index.php?" a:1, c:3
+2023/08/07 20:35:05 [debug] 8#8: *6 http request count:3 blk:0
+2023/08/07 20:35:05 [debug] 8#8: *6 http finalize request: -4, "/index.php?" a:1, c:2
+2023/08/07 20:35:05 [debug] 8#8: *6 http request count:2 blk:0
+2023/08/07 20:35:05 [debug] 8#8: *6 http run request: "/index.php?"
+2023/08/07 20:35:05 [debug] 8#8: *6 http upstream check client, write event:1, "/index.php"
+2023/08/07 20:35:05 [debug] 8#8: *6 http upstream request: "/index.php?"
+2023/08/07 20:35:05 [debug] 8#8: *6 http upstream send request handler
+2023/08/07 20:35:05 [debug] 8#8: *6 http upstream send request
+2023/08/07 20:35:05 [debug] 8#8: *6 http upstream send request body
+2023/08/07 20:35:05 [debug] 8#8: *6 chain writer buf fl:0 s:1000
+2023/08/07 20:35:05 [debug] 8#8: *6 chain writer in: 000055F756399E00
+2023/08/07 20:35:05 [debug] 8#8: *6 writev: 1000 of 1000
+2023/08/07 20:35:05 [debug] 8#8: *6 chain writer out: 0000000000000000
+2023/08/07 20:35:05 [debug] 8#8: *6 event timer del: 20: 5289365
+2023/08/07 20:35:05 [debug] 8#8: *6 event timer add: 20: 60000:5289417
+2023/08/07 20:35:05 [debug] 8#8: *6 http upstream request: "/index.php?"
+2023/08/07 20:35:05 [debug] 8#8: *6 http upstream process header
+2023/08/07 20:35:05 [debug] 8#8: *6 malloc: 000055F75642F3B0:4096
+2023/08/07 20:35:05 [debug] 8#8: *6 posix_memalign: 000055F7564303C0:4096 @16
+2023/08/07 20:35:05 [debug] 8#8: *6 recv: eof:0, avail:1
+2023/08/07 20:35:05 [debug] 8#8: *6 recv: fd:20 4096 of 4096
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 01
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 07
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 00
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 01
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 0D
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 99
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 07
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 00
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record length: 3481
+2023/08/07 20:35:05 [error] 8#8: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  ftp_nlist() expects parameter 1 to be resource, null given in /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php on line 427PHP message: PHP Warning:  ftp_pwd() expects parameter 1 to be resource, null given in /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php on line 230PHP message: PHP Warning:  ftp_pwd() expects parameter 1 to be resource, null given in /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php on line 230PHP message: PHP Warning:  ftp_pwd() expects parameter 1 to be resource, null given in /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php on line 230PHP message: PHP Warning:  ftp_nlist() expects parameter 1 to be resource, null given in /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php on line 427PHP message: PHP Warning:  ftp_pwd() expects parameter 1 to be resource, null given in /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php on line 230PHP message: PHP Warning:  ftp_pwd() expects parameter 1 to be resource, null given in /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php on line 230PHP message: PHP Warning:  ftp_pwd() expects parameter 1 to be resource, null given in /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php on line 726PHP message: PHP Warning:  ftp_nlist() expects parameter 1 to be resource, null given in /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php on line 427PHP message: PHP Warning:  ftp_pwd() expects parameter 1 to be resource, null given in /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php on line 230PHP message: PHP Warning:  ftp_pwd() expects parameter 1 to be resource, null given in /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php on line 230PHP message: PHP Warning:  ftp_pwd() expects parameter 1 to be resource, null given in /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php on line 230PHP message: PHP Warning:  ftp_nlist() expects p
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 01
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 06
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 00
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 01
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 12
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 50
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 00
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 00
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record length: 4688
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi parser: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi header: "Content-Type: text/html; charset=UTF-8"
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi parser: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi header: "Link: <https://www.login.1337.ma/index.php?rest_route=/>; rel="https://api.w.org/""
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi parser: 1
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi header done
+2023/08/07 20:35:05 [debug] 8#8: *6 xslt filter header
+2023/08/07 20:35:05 [debug] 8#8: *6 HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 07 Aug 2023 20:35:05 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Link: <https://www.login.1337.ma/index.php?rest_route=/>; rel="https://api.w.org/"
+Content-Encoding: gzip
+
+2023/08/07 20:35:05 [debug] 8#8: *6 write new buf t:1 f:0 000055F7564306B8, pos 000055F7564306B8, size: 278 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 http write filter: l:0 f:0 s:278
+2023/08/07 20:35:05 [debug] 8#8: *6 http cacheable: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 http upstream process upstream
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe read upstream: 1
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe preread: 466
+2023/08/07 20:35:05 [debug] 8#8: *6 input buf #0 000055F7564301DE
+2023/08/07 20:35:05 [debug] 8#8: *6 input buf 000055F7564301DE 466
+2023/08/07 20:35:05 [debug] 8#8: *6 malloc: 000055F7564313D0:4096
+2023/08/07 20:35:05 [debug] 8#8: *6 readv: eof:0, avail:1
+2023/08/07 20:35:05 [debug] 8#8: *6 readv: 1, last:4096
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe recv chain: 4096
+2023/08/07 20:35:05 [debug] 8#8: *6 input buf #1 000055F7564313D0
+2023/08/07 20:35:05 [debug] 8#8: *6 input buf 000055F7564313D0 4096
+2023/08/07 20:35:05 [debug] 8#8: *6 malloc: 000055F7564323E0:4096
+2023/08/07 20:35:05 [debug] 8#8: *6 readv: eof:0, avail:1
+2023/08/07 20:35:05 [debug] 8#8: *6 readv: 1, last:4096
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe recv chain: 4096
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 01
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 06
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 00
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 01
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 1F
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: F8
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 00
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 00
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record length: 8184
+2023/08/07 20:35:05 [debug] 8#8: *6 input buf #2 000055F7564323E8
+2023/08/07 20:35:05 [debug] 8#8: *6 input buf 000055F7564323E8 4088
+2023/08/07 20:35:05 [debug] 8#8: *6 malloc: 000055F756429370:4096
+2023/08/07 20:35:05 [debug] 8#8: *6 readv: eof:0, avail:1
+2023/08/07 20:35:05 [debug] 8#8: *6 readv: 1, last:4096
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe recv chain: 4096
+2023/08/07 20:35:05 [debug] 8#8: *6 input buf #3 000055F756429370
+2023/08/07 20:35:05 [debug] 8#8: *6 input buf 000055F756429370 4096
+2023/08/07 20:35:05 [debug] 8#8: *6 malloc: 000055F75642A380:4096
+2023/08/07 20:35:05 [debug] 8#8: *6 readv: eof:0, avail:1
+2023/08/07 20:35:05 [debug] 8#8: *6 readv: 1, last:4096
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe recv chain: 4096
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 01
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 06
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 00
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 01
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 1F
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: F8
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 00
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 00
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record length: 8184
+2023/08/07 20:35:05 [debug] 8#8: *6 input buf #4 000055F75642A388
+2023/08/07 20:35:05 [debug] 8#8: *6 input buf 000055F75642A388 4088
+2023/08/07 20:35:05 [debug] 8#8: *6 malloc: 000055F75642B390:4096
+2023/08/07 20:35:05 [debug] 8#8: *6 readv: eof:0, avail:1
+2023/08/07 20:35:05 [debug] 8#8: *6 readv: 1, last:4096
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe recv chain: 4096
+2023/08/07 20:35:05 [debug] 8#8: *6 input buf #5 000055F75642B390
+2023/08/07 20:35:05 [debug] 8#8: *6 input buf 000055F75642B390 4096
+2023/08/07 20:35:05 [debug] 8#8: *6 malloc: 000055F75642C3A0:4096
+2023/08/07 20:35:05 [debug] 8#8: *6 readv: eof:0, avail:1
+2023/08/07 20:35:05 [debug] 8#8: *6 readv: 1, last:4096
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe recv chain: 4096
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 01
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 06
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 00
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 01
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 1F
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: F8
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 00
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 00
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record length: 8184
+2023/08/07 20:35:05 [debug] 8#8: *6 input buf #6 000055F75642C3A8
+2023/08/07 20:35:05 [debug] 8#8: *6 input buf 000055F75642C3A8 4088
+2023/08/07 20:35:05 [debug] 8#8: *6 malloc: 000055F75642D3B0:4096
+2023/08/07 20:35:05 [debug] 8#8: *6 readv: eof:0, avail:1
+2023/08/07 20:35:05 [debug] 8#8: *6 readv: 1, last:4096
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe recv chain: 4096
+2023/08/07 20:35:05 [debug] 8#8: *6 input buf #7 000055F75642D3B0
+2023/08/07 20:35:05 [debug] 8#8: *6 input buf 000055F75642D3B0 4096
+2023/08/07 20:35:05 [debug] 8#8: *6 malloc: 000055F756433890:4096
+2023/08/07 20:35:05 [debug] 8#8: *6 readv: eof:0, avail:1
+2023/08/07 20:35:05 [debug] 8#8: *6 readv: 1, last:4096
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe recv chain: 4096
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 01
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 06
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 00
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 01
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 14
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 06
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 02
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record byte: 00
+2023/08/07 20:35:05 [debug] 8#8: *6 http fastcgi record length: 5126
+2023/08/07 20:35:05 [debug] 8#8: *6 input buf #8 000055F756433898
+2023/08/07 20:35:05 [debug] 8#8: *6 input buf 000055F756433898 4088
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe downstream ready
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf in   s:1 t:1 f:0 000055F75642F3B0, pos 000055F7564301DE, size: 466 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf in   s:1 t:1 f:0 000055F7564313D0, pos 000055F7564313D0, size: 4096 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf in   s:1 t:1 f:0 000055F7564323E0, pos 000055F7564323E8, size: 4088 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf in   s:1 t:1 f:0 000055F756429370, pos 000055F756429370, size: 4096 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf in   s:1 t:1 f:0 000055F75642A380, pos 000055F75642A388, size: 4088 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf in   s:1 t:1 f:0 000055F75642B390, pos 000055F75642B390, size: 4096 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf in   s:1 t:1 f:0 000055F75642C3A0, pos 000055F75642C3A8, size: 4088 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf in   s:1 t:1 f:0 000055F75642D3B0, pos 000055F75642D3B0, size: 4096 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf in   s:1 t:1 f:0 000055F756433890, pos 000055F756433898, size: 4088 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe length: -1
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write downstream: 1
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write busy: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write buf ls:1 000055F7564301DE 466
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write buf ls:1 000055F7564313D0 4096
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write buf ls:1 000055F7564323E8 4088
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write: out:000055F7563A3418, f:1
+2023/08/07 20:35:05 [debug] 8#8: *6 http output filter "/index.php?"
+2023/08/07 20:35:05 [debug] 8#8: *6 http copy filter: "/index.php?"
+2023/08/07 20:35:05 [debug] 8#8: *6 image filter
+2023/08/07 20:35:05 [debug] 8#8: *6 xslt filter body
+2023/08/07 20:35:05 [debug] 8#8: *6 http postpone filter "/index.php?" 000055F7563A3408
+2023/08/07 20:35:05 [debug] 8#8: *6 http gzip filter
+2023/08/07 20:35:05 [debug] 8#8: *6 malloc: 00007F6A03368010:270336
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip alloc: n:1 s:5952 a:8192 p:00007F6A03368010
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip alloc: n:32768 s:2 a:65536 p:00007F6A0336A010
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip alloc: n:32768 s:2 a:65536 p:00007F6A0337A010
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip alloc: n:32768 s:2 a:65536 p:00007F6A0338A010
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip alloc: n:16384 s:4 a:65536 p:00007F6A0339A010
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in: 000055F756430FA8
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in_buf:000055F7564308E0 ni:000055F7564301DE ai:466
+2023/08/07 20:35:05 [debug] 8#8: *6 malloc: 000055F7564348A0:4096
+2023/08/07 20:35:05 [debug] 8#8: *6 deflate in: ni:000055F7564301DE no:000055F7564348A0 ai:466 ao:4096 fl:0 redo:0
+2023/08/07 20:35:05 [debug] 8#8: *6 deflate out: ni:000055F7564303B0 no:000055F7564348A0 ai:0 ao:4096 rc:0
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in_buf:000055F7564308E0 pos:000055F7564301DE
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in: 000055F756430FB8
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in_buf:000055F756430980 ni:000055F7564313D0 ai:4096
+2023/08/07 20:35:05 [debug] 8#8: *6 deflate in: ni:000055F7564313D0 no:000055F7564348A0 ai:4096 ao:4096 fl:0 redo:0
+2023/08/07 20:35:05 [debug] 8#8: *6 deflate out: ni:000055F7564323D0 no:000055F7564348A0 ai:0 ao:4096 rc:0
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in_buf:000055F756430980 pos:000055F7564313D0
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in: 0000000000000000
+2023/08/07 20:35:05 [debug] 8#8: *6 http copy filter: 0 "/index.php?"
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write busy: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write buf ls:1 000055F7564323E8 4088
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write buf ls:1 000055F756429370 4096
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write buf ls:1 000055F75642A388 4088
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write: out:000055F756430A30, f:1
+2023/08/07 20:35:05 [debug] 8#8: *6 http output filter "/index.php?"
+2023/08/07 20:35:05 [debug] 8#8: *6 http copy filter: "/index.php?"
+2023/08/07 20:35:05 [debug] 8#8: *6 image filter
+2023/08/07 20:35:05 [debug] 8#8: *6 xslt filter body
+2023/08/07 20:35:05 [debug] 8#8: *6 http postpone filter "/index.php?" 000055F756430FB8
+2023/08/07 20:35:05 [debug] 8#8: *6 http gzip filter
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in: 000055F756431028
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in_buf:000055F756430A40 ni:000055F7564323E8 ai:4088
+2023/08/07 20:35:05 [debug] 8#8: *6 deflate in: ni:000055F7564323E8 no:000055F7564348A0 ai:4088 ao:4096 fl:0 redo:0
+2023/08/07 20:35:05 [debug] 8#8: *6 deflate out: ni:000055F7564333E0 no:000055F7564348A0 ai:0 ao:4096 rc:0
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in_buf:000055F756430A40 pos:000055F7564323E8
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in: 000055F756431038
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in_buf:000055F756430B00 ni:000055F756429370 ai:4096
+2023/08/07 20:35:05 [debug] 8#8: *6 deflate in: ni:000055F756429370 no:000055F7564348A0 ai:4096 ao:4096 fl:0 redo:0
+2023/08/07 20:35:05 [debug] 8#8: *6 deflate out: ni:000055F75642A370 no:000055F7564348A0 ai:0 ao:4096 rc:0
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in_buf:000055F756430B00 pos:000055F756429370
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in: 0000000000000000
+2023/08/07 20:35:05 [debug] 8#8: *6 http copy filter: 0 "/index.php?"
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write busy: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write buf ls:1 000055F75642A388 4088
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write buf ls:1 000055F75642B390 4096
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write buf ls:1 000055F75642C3A8 4088
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write: out:000055F756430BB0, f:1
+2023/08/07 20:35:05 [debug] 8#8: *6 http output filter "/index.php?"
+2023/08/07 20:35:05 [debug] 8#8: *6 http copy filter: "/index.php?"
+2023/08/07 20:35:05 [debug] 8#8: *6 image filter
+2023/08/07 20:35:05 [debug] 8#8: *6 xslt filter body
+2023/08/07 20:35:05 [debug] 8#8: *6 http postpone filter "/index.php?" 000055F756431038
+2023/08/07 20:35:05 [debug] 8#8: *6 http gzip filter
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in: 000055F756431048
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in_buf:000055F756430BC0 ni:000055F75642A388 ai:4088
+2023/08/07 20:35:05 [debug] 8#8: *6 deflate in: ni:000055F75642A388 no:000055F7564348A0 ai:4088 ao:4096 fl:0 redo:0
+2023/08/07 20:35:05 [debug] 8#8: *6 deflate out: ni:000055F75642B380 no:000055F7564348A0 ai:0 ao:4096 rc:0
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in_buf:000055F756430BC0 pos:000055F75642A388
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in: 000055F756431058
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in_buf:000055F756430C80 ni:000055F75642B390 ai:4096
+2023/08/07 20:35:05 [debug] 8#8: *6 deflate in: ni:000055F75642B390 no:000055F7564348A0 ai:4096 ao:4096 fl:0 redo:0
+2023/08/07 20:35:05 [debug] 8#8: *6 deflate out: ni:000055F75642C390 no:000055F7564348A0 ai:0 ao:4096 rc:0
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in_buf:000055F756430C80 pos:000055F75642B390
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in: 0000000000000000
+2023/08/07 20:35:05 [debug] 8#8: *6 http copy filter: 0 "/index.php?"
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write busy: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write buf ls:1 000055F75642C3A8 4088
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write buf ls:1 000055F75642D3B0 4096
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write buf ls:1 000055F756433898 4088
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write: out:000055F756430D30, f:1
+2023/08/07 20:35:05 [debug] 8#8: *6 http output filter "/index.php?"
+2023/08/07 20:35:05 [debug] 8#8: *6 http copy filter: "/index.php?"
+2023/08/07 20:35:05 [debug] 8#8: *6 image filter
+2023/08/07 20:35:05 [debug] 8#8: *6 xslt filter body
+2023/08/07 20:35:05 [debug] 8#8: *6 http postpone filter "/index.php?" 000055F756431058
+2023/08/07 20:35:05 [debug] 8#8: *6 http gzip filter
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in: 000055F756431068
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in_buf:000055F756430D40 ni:000055F75642C3A8 ai:4088
+2023/08/07 20:35:05 [debug] 8#8: *6 deflate in: ni:000055F75642C3A8 no:000055F7564348A0 ai:4088 ao:4096 fl:0 redo:0
+2023/08/07 20:35:05 [debug] 8#8: *6 deflate out: ni:000055F75642D3A0 no:000055F7564348A0 ai:0 ao:4096 rc:0
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in_buf:000055F756430D40 pos:000055F75642C3A8
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in: 000055F756431078
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in_buf:000055F756430E00 ni:000055F75642D3B0 ai:4096
+2023/08/07 20:35:05 [debug] 8#8: *6 deflate in: ni:000055F75642D3B0 no:000055F7564348A0 ai:4096 ao:4096 fl:0 redo:0
+2023/08/07 20:35:05 [debug] 8#8: *6 deflate out: ni:000055F75642E3B0 no:000055F7564348A0 ai:0 ao:4096 rc:0
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in_buf:000055F756430E00 pos:000055F75642D3B0
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in: 0000000000000000
+2023/08/07 20:35:05 [debug] 8#8: *6 http copy filter: 0 "/index.php?"
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write busy: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write buf ls:1 000055F756433898 4088
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write: out:000055F756430EB0, f:0
+2023/08/07 20:35:05 [debug] 8#8: *6 http output filter "/index.php?"
+2023/08/07 20:35:05 [debug] 8#8: *6 http copy filter: "/index.php?"
+2023/08/07 20:35:05 [debug] 8#8: *6 image filter
+2023/08/07 20:35:05 [debug] 8#8: *6 xslt filter body
+2023/08/07 20:35:05 [debug] 8#8: *6 http postpone filter "/index.php?" 000055F756430EB0
+2023/08/07 20:35:05 [debug] 8#8: *6 http gzip filter
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in: 000055F756431078
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in_buf:000055F756430EC0 ni:000055F756433898 ai:4088
+2023/08/07 20:35:05 [debug] 8#8: *6 deflate in: ni:000055F756433898 no:000055F7564348A0 ai:4088 ao:4096 fl:0 redo:0
+2023/08/07 20:35:05 [debug] 8#8: *6 deflate out: ni:000055F756434890 no:000055F7564348A0 ai:0 ao:4096 rc:0
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in_buf:000055F756430EC0 pos:000055F756433898
+2023/08/07 20:35:05 [debug] 8#8: *6 gzip in: 0000000000000000
+2023/08/07 20:35:05 [debug] 8#8: *6 http copy filter: 0 "/index.php?"
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write busy: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write: out:0000000000000000, f:0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe read upstream: 1
+2023/08/07 20:35:05 [debug] 8#8: *6 readv: eof:0, avail:1
+2023/08/07 20:35:05 [debug] 8#8: *6 readv: 9, last:4096
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe recv chain: 1056
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F756433890, pos 000055F756433890, size: 1056 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F75642C3A0, pos 000055F75642C3A0, size: 0 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F75642D3B0, pos 000055F75642D3B0, size: 0 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F75642A380, pos 000055F75642A380, size: 0 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F75642B390, pos 000055F75642B390, size: 0 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F7564323E0, pos 000055F7564323E0, size: 0 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F756429370, pos 000055F756429370, size: 0 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F75642F3B0, pos 000055F75642F3B0, size: 0 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F7564313D0, pos 000055F7564313D0, size: 0 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe length: -1
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write downstream: 1
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write busy: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe write: out:0000000000000000, f:0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe read upstream: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F756433890, pos 000055F756433890, size: 1056 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F75642C3A0, pos 000055F75642C3A0, size: 0 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F75642D3B0, pos 000055F75642D3B0, size: 0 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F75642A380, pos 000055F75642A380, size: 0 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F75642B390, pos 000055F75642B390, size: 0 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F7564323E0, pos 000055F7564323E0, size: 0 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F756429370, pos 000055F756429370, size: 0 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F75642F3B0, pos 000055F75642F3B0, size: 0 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F7564313D0, pos 000055F7564313D0, size: 0 file: 0, size: 0
+2023/08/07 20:35:05 [debug] 8#8: *6 pipe length: -1
+2023/08/07 20:35:05 [debug] 8#8: *6 event timer del: 20: 5289417
+2023/08/07 20:35:05 [debug] 8#8: *6 event timer add: 20: 60000:5289743
+2023/08/07 20:35:05 [debug] 8#8: *6 http upstream request: "/index.php?"
+2023/08/07 20:35:05 [debug] 8#8: *6 http upstream dummy handler
+2023/08/07 20:35:06 [debug] 8#8: *6 http upstream request: "/index.php?"
+2023/08/07 20:35:06 [debug] 8#8: *6 http upstream process upstream
+2023/08/07 20:35:06 [debug] 8#8: *6 pipe read upstream: 1
+2023/08/07 20:35:06 [debug] 8#8: *6 readv: eof:1, avail:1
+2023/08/07 20:35:06 [debug] 8#8: *6 readv: 9, last:4096
+2023/08/07 20:35:06 [debug] 8#8: *6 pipe recv chain: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F756433890, pos 000055F756433890, size: 1056 file: 0, size: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F75642C3A0, pos 000055F75642C3A0, size: 0 file: 0, size: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F75642D3B0, pos 000055F75642D3B0, size: 0 file: 0, size: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F75642A380, pos 000055F75642A380, size: 0 file: 0, size: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F75642B390, pos 000055F75642B390, size: 0 file: 0, size: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F7564323E0, pos 000055F7564323E0, size: 0 file: 0, size: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F756429370, pos 000055F756429370, size: 0 file: 0, size: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F75642F3B0, pos 000055F75642F3B0, size: 0 file: 0, size: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 pipe buf free s:0 t:1 f:0 000055F7564313D0, pos 000055F7564313D0, size: 0 file: 0, size: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 pipe length: -1
+2023/08/07 20:35:06 [debug] 8#8: *6 input buf #9 000055F756433890
+2023/08/07 20:35:06 [debug] 8#8: *6 http fastcgi record byte: 01
+2023/08/07 20:35:06 [debug] 8#8: *6 http fastcgi record byte: 03
+2023/08/07 20:35:06 [debug] 8#8: *6 http fastcgi record byte: 00
+2023/08/07 20:35:06 [debug] 8#8: *6 http fastcgi record byte: 01
+2023/08/07 20:35:06 [debug] 8#8: *6 http fastcgi record byte: 00
+2023/08/07 20:35:06 [debug] 8#8: *6 http fastcgi record byte: 08
+2023/08/07 20:35:06 [debug] 8#8: *6 http fastcgi record byte: 00
+2023/08/07 20:35:06 [debug] 8#8: *6 http fastcgi record byte: 00
+2023/08/07 20:35:06 [debug] 8#8: *6 http fastcgi record length: 8
+2023/08/07 20:35:06 [debug] 8#8: *6 http fastcgi sent end request
+2023/08/07 20:35:06 [debug] 8#8: *6 input buf 000055F756433890 1038
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 000055F75642C3A0
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 000055F75642D3B0
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 000055F75642A380
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 000055F75642B390
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 000055F7564323E0
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 000055F756429370
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 000055F75642F3B0
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 000055F7564313D0
+2023/08/07 20:35:06 [debug] 8#8: *6 pipe write downstream: 1
+2023/08/07 20:35:06 [debug] 8#8: *6 pipe write downstream flush in
+2023/08/07 20:35:06 [debug] 8#8: *6 http output filter "/index.php?"
+2023/08/07 20:35:06 [debug] 8#8: *6 http copy filter: "/index.php?"
+2023/08/07 20:35:06 [debug] 8#8: *6 image filter
+2023/08/07 20:35:06 [debug] 8#8: *6 xslt filter body
+2023/08/07 20:35:06 [debug] 8#8: *6 http postpone filter "/index.php?" 000055F756430EB0
+2023/08/07 20:35:06 [debug] 8#8: *6 http gzip filter
+2023/08/07 20:35:06 [debug] 8#8: *6 gzip in: 000055F756431068
+2023/08/07 20:35:06 [debug] 8#8: *6 gzip in_buf:000055F756430EC0 ni:000055F756433890 ai:1038
+2023/08/07 20:35:06 [debug] 8#8: *6 deflate in: ni:000055F756433890 no:000055F7564348A0 ai:1038 ao:4096 fl:0 redo:0
+2023/08/07 20:35:06 [debug] 8#8: *6 deflate out: ni:000055F756433C9E no:000055F7564348A0 ai:0 ao:4096 rc:0
+2023/08/07 20:35:06 [debug] 8#8: *6 gzip in_buf:000055F756430EC0 pos:000055F756433890
+2023/08/07 20:35:06 [debug] 8#8: *6 gzip in: 0000000000000000
+2023/08/07 20:35:06 [debug] 8#8: *6 http copy filter: 0 "/index.php?"
+2023/08/07 20:35:06 [debug] 8#8: *6 pipe write downstream done
+2023/08/07 20:35:06 [debug] 8#8: *6 event timer: 20, old: 5289743, new: 5289834
+2023/08/07 20:35:06 [debug] 8#8: *6 http upstream exit: 0000000000000000
+2023/08/07 20:35:06 [debug] 8#8: *6 finalize http upstream request: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 finalize http fastcgi request
+2023/08/07 20:35:06 [debug] 8#8: *6 free rr peer 1 0
+2023/08/07 20:35:06 [debug] 8#8: *6 close http upstream connection: 20
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 000055F7563A47D0, unused: 48
+2023/08/07 20:35:06 [debug] 8#8: *6 event timer del: 20: 5289743
+2023/08/07 20:35:06 [debug] 8#8: *6 reusable connection: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 http upstream temp fd: -1
+2023/08/07 20:35:06 [debug] 8#8: *6 http output filter "/index.php?"
+2023/08/07 20:35:06 [debug] 8#8: *6 http copy filter: "/index.php?"
+2023/08/07 20:35:06 [debug] 8#8: *6 image filter
+2023/08/07 20:35:06 [debug] 8#8: *6 xslt filter body
+2023/08/07 20:35:06 [debug] 8#8: *6 http postpone filter "/index.php?" 00007FFECD386130
+2023/08/07 20:35:06 [debug] 8#8: *6 http gzip filter
+2023/08/07 20:35:06 [debug] 8#8: *6 gzip in: 000055F756431068
+2023/08/07 20:35:06 [debug] 8#8: *6 gzip in_buf:000055F756431088 ni:0000000000000000 ai:0
+2023/08/07 20:35:06 [debug] 8#8: *6 deflate in: ni:0000000000000000 no:000055F7564348A0 ai:0 ao:4096 fl:4 redo:0
+2023/08/07 20:35:06 [debug] 8#8: *6 deflate out: ni:0000000000000000 no:000055F7564358A0 ai:0 ao:0 rc:0
+2023/08/07 20:35:06 [debug] 8#8: *6 gzip in_buf:000055F756431088 pos:0000000000000000
+2023/08/07 20:35:06 [debug] 8#8: *6 malloc: 000055F75642F3B0:4096
+2023/08/07 20:35:06 [debug] 8#8: *6 deflate in: ni:0000000000000000 no:000055F75642F3B0 ai:0 ao:4096 fl:4 redo:1
+2023/08/07 20:35:06 [debug] 8#8: *6 deflate out: ni:0000000000000000 no:000055F7564303B0 ai:0 ao:0 rc:0
+2023/08/07 20:35:06 [debug] 8#8: *6 gzip in_buf:000055F756431088 pos:0000000000000000
+2023/08/07 20:35:06 [debug] 8#8: *6 malloc: 000055F7564313D0:4096
+2023/08/07 20:35:06 [debug] 8#8: *6 deflate in: ni:0000000000000000 no:000055F7564313D0 ai:0 ao:4096 fl:4 redo:1
+2023/08/07 20:35:06 [debug] 8#8: *6 deflate out: ni:0000000000000000 no:000055F75643152A ai:0 ao:3750 rc:1
+2023/08/07 20:35:06 [debug] 8#8: *6 gzip in_buf:000055F756431088 pos:0000000000000000
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 00007F6A03368010
+2023/08/07 20:35:06 [debug] 8#8: *6 http chunk: 10
+2023/08/07 20:35:06 [debug] 8#8: *6 http chunk: 4096
+2023/08/07 20:35:06 [debug] 8#8: *6 http chunk: 4096
+2023/08/07 20:35:06 [debug] 8#8: *6 http chunk: 354
+2023/08/07 20:35:06 [debug] 8#8: *6 write old buf t:1 f:0 000055F7564306B8, pos 000055F7564306B8, size: 278 file: 0, size: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 write new buf t:1 f:0 000055F756431298, pos 000055F756431298, size: 6 file: 0, size: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 write new buf t:0 f:0 0000000000000000, pos 000055F75632D1A0, size: 10 file: 0, size: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 write new buf t:1 f:0 000055F7564348A0, pos 000055F7564348A0, size: 4096 file: 0, size: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 write new buf t:1 f:0 000055F75642F3B0, pos 000055F75642F3B0, size: 4096 file: 0, size: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 write new buf t:1 f:0 000055F7564313D0, pos 000055F7564313D0, size: 354 file: 0, size: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 write new buf t:0 f:0 0000000000000000, pos 000055F7562FF9A5, size: 7 file: 0, size: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 http write filter: l:1 f:1 s:8847
+2023/08/07 20:35:06 [debug] 8#8: *6 http write filter limit 0
+2023/08/07 20:35:06 [debug] 8#8: *6 posix_memalign: 000055F75642E8D0:512 @16
+2023/08/07 20:35:06 [debug] 8#8: *6 malloc: 000055F756429370:16384
+2023/08/07 20:35:06 [debug] 8#8: *6 SSL buf copy: 278
+2023/08/07 20:35:06 [debug] 8#8: *6 SSL buf copy: 6
+2023/08/07 20:35:06 [debug] 8#8: *6 SSL buf copy: 10
+2023/08/07 20:35:06 [debug] 8#8: *6 SSL buf copy: 4096
+2023/08/07 20:35:06 [debug] 8#8: *6 SSL buf copy: 4096
+2023/08/07 20:35:06 [debug] 8#8: *6 SSL buf copy: 354
+2023/08/07 20:35:06 [debug] 8#8: *6 SSL buf copy: 7
+2023/08/07 20:35:06 [debug] 8#8: *6 SSL to write: 8847
+2023/08/07 20:35:06 [debug] 8#8: *6 SSL_write: 8847
+2023/08/07 20:35:06 [debug] 8#8: *6 http write filter 0000000000000000
+2023/08/07 20:35:06 [debug] 8#8: *6 http copy filter: 0 "/index.php?"
+2023/08/07 20:35:06 [debug] 8#8: *6 http finalize request: 0, "/index.php?" a:1, c:1
+2023/08/07 20:35:06 [debug] 8#8: *6 set http keepalive handler
+2023/08/07 20:35:06 [debug] 8#8: *6 http close request
+2023/08/07 20:35:06 [debug] 8#8: *6 http log handler
+2023/08/07 20:35:06 [debug] 8#8: *6 posix_memalign: 000055F7564323E0:4096 @16
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 000055F7564348A0
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 0000000000000000
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 000055F756433890
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 000055F75642F3B0
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 000055F7564313D0
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 0000000000000000
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 0000000000000000
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 0000000000000000
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 0000000000000000
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 0000000000000000
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 0000000000000000
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 000055F756398E10, unused: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 000055F7563A2450, unused: 8
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 000055F7564303C0, unused: 80
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 000055F7564323E0, unused: 3870
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 000055F7563821E0
+2023/08/07 20:35:06 [debug] 8#8: *6 hc free: 0000000000000000
+2023/08/07 20:35:06 [debug] 8#8: *6 hc busy: 0000000000000000 0
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 000055F756429370
+2023/08/07 20:35:06 [debug] 8#8: *6 reusable connection: 1
+2023/08/07 20:35:06 [debug] 8#8: *6 event timer add: 19: 65000:5294834
+2023/08/07 20:35:06 [debug] 8#8: *6 http keepalive handler
+2023/08/07 20:35:06 [debug] 8#8: *6 malloc: 000055F7563821E0:1024
+2023/08/07 20:35:06 [debug] 8#8: *6 SSL_read: 438
+2023/08/07 20:35:06 [debug] 8#8: *6 SSL_read: -1
+2023/08/07 20:35:06 [debug] 8#8: *6 SSL_get_error: 2
+2023/08/07 20:35:06 [debug] 8#8: *6 reusable connection: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 posix_memalign: 000055F7563A2450:4096 @16
+2023/08/07 20:35:06 [debug] 8#8: *6 event timer del: 19: 5294834
+2023/08/07 20:35:06 [debug] 8#8: *6 http process request line
+2023/08/07 20:35:06 [debug] 8#8: *6 http request line: "GET /favicon.ico HTTP/1.1"
+2023/08/07 20:35:06 [debug] 8#8: *6 http uri: "/favicon.ico"
+2023/08/07 20:35:06 [debug] 8#8: *6 http args: ""
+2023/08/07 20:35:06 [debug] 8#8: *6 http exten: "ico"
+2023/08/07 20:35:06 [debug] 8#8: *6 posix_memalign: 000055F756398E10:4096 @16
+2023/08/07 20:35:06 [debug] 8#8: *6 http process request header line
+2023/08/07 20:35:06 [debug] 8#8: *6 http header: "Host: localhost"
+2023/08/07 20:35:06 [debug] 8#8: *6 http header: "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/113.0"
+2023/08/07 20:35:06 [debug] 8#8: *6 http header: "Accept: image/avif,image/webp,*/*"
+2023/08/07 20:35:06 [debug] 8#8: *6 http header: "Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"
+2023/08/07 20:35:06 [debug] 8#8: *6 http header: "Accept-Encoding: gzip, deflate, br"
+2023/08/07 20:35:06 [debug] 8#8: *6 http header: "Connection: keep-alive"
+2023/08/07 20:35:06 [debug] 8#8: *6 http header: "Referer: https://localhost/"
+2023/08/07 20:35:06 [debug] 8#8: *6 http header: "Cookie: wp-settings-time-1=1689537084"
+2023/08/07 20:35:06 [debug] 8#8: *6 http header: "Sec-Fetch-Dest: image"
+2023/08/07 20:35:06 [debug] 8#8: *6 http header: "Sec-Fetch-Mode: no-cors"
+2023/08/07 20:35:06 [debug] 8#8: *6 http header: "Sec-Fetch-Site: same-origin"
+2023/08/07 20:35:06 [debug] 8#8: *6 http header done
+2023/08/07 20:35:06 [debug] 8#8: *6 generic phase: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 rewrite phase: 1
+2023/08/07 20:35:06 [debug] 8#8: *6 test location: ~ "[^/]\.php(/|$)"
+2023/08/07 20:35:06 [debug] 8#8: *6 using configuration ""
+2023/08/07 20:35:06 [debug] 8#8: *6 http cl:-1 max:1048576
+2023/08/07 20:35:06 [debug] 8#8: *6 rewrite phase: 3
+2023/08/07 20:35:06 [debug] 8#8: *6 post rewrite phase: 4
+2023/08/07 20:35:06 [debug] 8#8: *6 generic phase: 5
+2023/08/07 20:35:06 [debug] 8#8: *6 generic phase: 6
+2023/08/07 20:35:06 [debug] 8#8: *6 generic phase: 7
+2023/08/07 20:35:06 [debug] 8#8: *6 access phase: 8
+2023/08/07 20:35:06 [debug] 8#8: *6 access phase: 9
+2023/08/07 20:35:06 [debug] 8#8: *6 access phase: 10
+2023/08/07 20:35:06 [debug] 8#8: *6 access phase: 11
+2023/08/07 20:35:06 [debug] 8#8: *6 post access phase: 12
+2023/08/07 20:35:06 [debug] 8#8: *6 generic phase: 13
+2023/08/07 20:35:06 [debug] 8#8: *6 generic phase: 14
+2023/08/07 20:35:06 [debug] 8#8: *6 generic phase: 15
+2023/08/07 20:35:06 [debug] 8#8: *6 content phase: 16
+2023/08/07 20:35:06 [debug] 8#8: *6 content phase: 17
+2023/08/07 20:35:06 [debug] 8#8: *6 content phase: 18
+2023/08/07 20:35:06 [debug] 8#8: *6 content phase: 19
+2023/08/07 20:35:06 [debug] 8#8: *6 content phase: 20
+2023/08/07 20:35:06 [debug] 8#8: *6 content phase: 21
+2023/08/07 20:35:06 [debug] 8#8: *6 http filename: "/var/www/html/favicon.ico"
+2023/08/07 20:35:06 [debug] 8#8: *6 add cleanup: 000055F7563A3360
+2023/08/07 20:35:06 [error] 8#8: *6 open() "/var/www/html/favicon.ico" failed (2: No such file or directory), client: 172.23.0.1, server: www.login.1337.ma, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "https://localhost/"
+2023/08/07 20:35:06 [debug] 8#8: *6 http finalize request: 404, "/favicon.ico?" a:1, c:1
+2023/08/07 20:35:06 [debug] 8#8: *6 http special response: 404, "/favicon.ico?"
+2023/08/07 20:35:06 [debug] 8#8: *6 http set discard body
+2023/08/07 20:35:06 [debug] 8#8: *6 xslt filter header
+2023/08/07 20:35:06 [debug] 8#8: *6 HTTP/1.1 404 Not Found
+Server: nginx/1.14.2
+Date: Mon, 07 Aug 2023 20:35:06 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+
+2023/08/07 20:35:06 [debug] 8#8: *6 write new buf t:1 f:0 000055F7563992F8, pos 000055F7563992F8, size: 186 file: 0, size: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 http write filter: l:0 f:0 s:186
+2023/08/07 20:35:06 [debug] 8#8: *6 http output filter "/favicon.ico?"
+2023/08/07 20:35:06 [debug] 8#8: *6 http copy filter: "/favicon.ico?"
+2023/08/07 20:35:06 [debug] 8#8: *6 image filter
+2023/08/07 20:35:06 [debug] 8#8: *6 xslt filter body
+2023/08/07 20:35:06 [debug] 8#8: *6 http postpone filter "/favicon.ico?" 000055F7563A3410
+2023/08/07 20:35:06 [debug] 8#8: *6 http gzip filter
+2023/08/07 20:35:06 [debug] 8#8: *6 malloc: 000055F75642F3B0:12288
+2023/08/07 20:35:06 [debug] 8#8: *6 gzip alloc: n:1 s:5952 a:8192 p:000055F75642F3B0
+2023/08/07 20:35:06 [debug] 8#8: *6 gzip alloc: n:512 s:2 a:1024 p:000055F7564313B0
+2023/08/07 20:35:06 [debug] 8#8: *6 gzip alloc: n:512 s:2 a:1024 p:000055F7564317B0
+2023/08/07 20:35:06 [debug] 8#8: *6 gzip alloc: n:512 s:2 a:1024 p:000055F756431BB0
+2023/08/07 20:35:06 [debug] 8#8: *6 gzip alloc: n:256 s:4 a:1024 p:000055F756431FB0
+2023/08/07 20:35:06 [debug] 8#8: *6 gzip in: 000055F7563A3440
+2023/08/07 20:35:06 [debug] 8#8: *6 gzip in_buf:000055F7563993B8 ni:000055F756329880 ai:116
+2023/08/07 20:35:06 [debug] 8#8: *6 malloc: 000055F7564323C0:4096
+2023/08/07 20:35:06 [debug] 8#8: *6 deflate in: ni:000055F756329880 no:000055F7564323C0 ai:116 ao:4096 fl:0 redo:0
+2023/08/07 20:35:06 [debug] 8#8: *6 deflate out: ni:000055F7563298F4 no:000055F7564323C0 ai:0 ao:4096 rc:0
+2023/08/07 20:35:06 [debug] 8#8: *6 gzip in_buf:000055F7563993B8 pos:000055F756329880
+2023/08/07 20:35:06 [debug] 8#8: *6 gzip in: 000055F7563994D0
+2023/08/07 20:35:06 [debug] 8#8: *6 gzip in_buf:000055F756399408 ni:000055F75632A0A0 ai:53
+2023/08/07 20:35:06 [debug] 8#8: *6 deflate in: ni:000055F75632A0A0 no:000055F7564323C0 ai:53 ao:4096 fl:4 redo:0
+2023/08/07 20:35:06 [debug] 8#8: *6 deflate out: ni:000055F75632A0D5 no:000055F756432432 ai:0 ao:3982 rc:1
+2023/08/07 20:35:06 [debug] 8#8: *6 gzip in_buf:000055F756399408 pos:000055F75632A0A0
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 000055F75642F3B0
+2023/08/07 20:35:06 [debug] 8#8: *6 http chunk: 10
+2023/08/07 20:35:06 [debug] 8#8: *6 http chunk: 122
+2023/08/07 20:35:06 [debug] 8#8: *6 write old buf t:1 f:0 000055F7563992F8, pos 000055F7563992F8, size: 186 file: 0, size: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 write new buf t:1 f:0 000055F756399610, pos 000055F756399610, size: 4 file: 0, size: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 write new buf t:0 f:0 0000000000000000, pos 000055F75632D1A0, size: 10 file: 0, size: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 write new buf t:1 f:0 000055F7564323C0, pos 000055F7564323C0, size: 122 file: 0, size: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 write new buf t:0 f:0 0000000000000000, pos 000055F7562FF9A5, size: 7 file: 0, size: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 http write filter: l:1 f:1 s:329
+2023/08/07 20:35:06 [debug] 8#8: *6 http write filter limit 0
+2023/08/07 20:35:06 [debug] 8#8: *6 malloc: 000055F756429370:16384
+2023/08/07 20:35:06 [debug] 8#8: *6 SSL buf copy: 186
+2023/08/07 20:35:06 [debug] 8#8: *6 SSL buf copy: 4
+2023/08/07 20:35:06 [debug] 8#8: *6 SSL buf copy: 10
+2023/08/07 20:35:06 [debug] 8#8: *6 SSL buf copy: 122
+2023/08/07 20:35:06 [debug] 8#8: *6 SSL buf copy: 7
+2023/08/07 20:35:06 [debug] 8#8: *6 SSL to write: 329
+2023/08/07 20:35:06 [debug] 8#8: *6 SSL_write: 329
+2023/08/07 20:35:06 [debug] 8#8: *6 http write filter 0000000000000000
+2023/08/07 20:35:06 [debug] 8#8: *6 http copy filter: 0 "/favicon.ico?"
+2023/08/07 20:35:06 [debug] 8#8: *6 http finalize request: 0, "/favicon.ico?" a:1, c:1
+2023/08/07 20:35:06 [debug] 8#8: *6 set http keepalive handler
+2023/08/07 20:35:06 [debug] 8#8: *6 http close request
+2023/08/07 20:35:06 [debug] 8#8: *6 http log handler
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 000055F7564323C0
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 0000000000000000
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 000055F7563A2450, unused: 0
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 000055F756398E10, unused: 1642
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 000055F7563821E0
+2023/08/07 20:35:06 [debug] 8#8: *6 hc free: 0000000000000000
+2023/08/07 20:35:06 [debug] 8#8: *6 hc busy: 0000000000000000 0
+2023/08/07 20:35:06 [debug] 8#8: *6 free: 000055F756429370
+2023/08/07 20:35:06 [debug] 8#8: *6 reusable connection: 1
+2023/08/07 20:35:06 [debug] 8#8: *6 event timer add: 19: 65000:5295274
+2023/08/07 20:35:06 [debug] 8#8: *6 http empty handler
+2023/08/07 20:37:20 [debug] 7#7: epoll add event: fd:8 op:1 ev:10000001
+2023/08/07 20:37:20 [debug] 7#7: epoll add event: fd:9 op:1 ev:10000001
+2023/08/07 20:37:20 [debug] 8#8: epoll add event: fd:8 op:1 ev:10000001
+2023/08/07 20:37:20 [debug] 8#8: epoll add event: fd:9 op:1 ev:10000001
+2023/08/07 20:37:20 [debug] 9#9: epoll add event: fd:8 op:1 ev:10000001
+2023/08/07 20:37:20 [debug] 9#9: epoll add event: fd:9 op:1 ev:10000001
+2023/08/07 20:37:20 [debug] 10#10: epoll add event: fd:8 op:1 ev:10000001
+2023/08/07 20:37:20 [debug] 10#10: epoll add event: fd:9 op:1 ev:10000001
+2023/08/07 20:37:20 [debug] 11#11: epoll add event: fd:8 op:1 ev:10000001
+2023/08/07 20:37:20 [debug] 12#12: epoll add event: fd:8 op:1 ev:10000001
+2023/08/07 20:37:20 [debug] 12#12: epoll add event: fd:9 op:1 ev:10000001
+2023/08/07 20:37:20 [debug] 11#11: epoll add event: fd:9 op:1 ev:10000001

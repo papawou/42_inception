@@ -1,7 +1,8 @@
 FROM debian:buster
 ARG WP_FOLDER
 
-RUN apt-get update && apt-get install -y curl\
+RUN apt-get update && apt-get install -y\
+    curl \
     php \
     php-fpm \
     php-mysql \
@@ -16,8 +17,7 @@ RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli
 
 COPY --chmod=777 /tools/configure.sh /tmp/
 
-COPY conf/test.php /var/www/html/wordpress/
-COPY conf/test.php /var/www/html/
+COPY conf/test.php $WP_FOLDER
 
 WORKDIR $WP_FOLDER
 CMD /tmp/configure.sh

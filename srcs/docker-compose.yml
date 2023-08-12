@@ -6,8 +6,6 @@ services:
     volumes:
       - wordpress_folder:${PUBLIC_FOLDER}
       - ./logs/nginx/error.log:/tmp/nginx/error.log
-    ports:
-      - 8080:80
     links:
       - wordpress
   mariadb:
@@ -24,8 +22,6 @@ services:
       context: ./requirements/wordpress
       args:
         - WP_FOLDER=${PUBLIC_FOLDER}
-    ports:
-      - 9000:9000
     stdin_open: true 
     tty: true
     environment:
