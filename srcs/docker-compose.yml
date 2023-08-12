@@ -6,6 +6,8 @@ services:
     volumes:
       - wordpress_folder:${PUBLIC_FOLDER}
       - ./logs/nginx/error.log:/tmp/nginx/error.log
+    ports:
+      - 443:443
     links:
       - wordpress
   mariadb:

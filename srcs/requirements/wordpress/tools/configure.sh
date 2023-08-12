@@ -12,7 +12,7 @@ while [ $success -eq 0 ]; do
     fi
 done
 
-wp core install --url=www.login.1337.ma  --title="WP-CLI" --admin_user=wpcli --admin_password=wpcli --admin_email=info@wp-cli.org --skip-email --allow-root
+wp core install --url=localhost --title="WP-CLI" --admin_user=wpcli --admin_password=wpcli --admin_email=info@wp-cli.org --skip-email --allow-root
 wp theme install inspiro --activate --allow-root
 
 cd /

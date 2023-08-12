@@ -1,0 +1,13 @@
+domain-name wordpress & nginx ? //configure in host machine
+
+
+nginx:
+    openssl configuration
+wordpress:
+    normal user
+mariadb:
+    image
+
+environment variables
+    root nginx
+    wp admin
