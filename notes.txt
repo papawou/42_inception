@@ -1,16 +1,14 @@
-domain-name wordpress & nginx ? //configure in host machine
-
 
 nginx:
     redirect http -> https
-    openssl configuration
+    openssl configuration (need to learn more)
+
 wordpress:
     normal user
-mariadb:
-    root user warning
-    image
 
+mariadb:
+    image
+    root user warning
+    
 environment variables
-    root nginx
     mariadb
-    wptitle
