@@ -1,14 +1,5 @@
-
-nginx:
-    redirect http -> https
-    openssl configuration (need to learn more)
-
 wordpress:
     normal user
 
 mariadb:
     image
-    root user warning
-    
-environment variables
-    mariadb
