@@ -12,6 +12,5 @@ mariadb:
 
 environment variables
     root nginx
-    wp admin
     mariadb
     wptitle

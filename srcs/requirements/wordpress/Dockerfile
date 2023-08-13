@@ -1,5 +1,5 @@
 FROM debian:buster
-ARG WP_FOLDER
+ARG WP_PUBLICDIR
 
 RUN apt-get update && apt-get install -y\
     curl \
@@ -17,7 +17,5 @@ RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli
 
 COPY --chmod=777 /tools/configure.sh /tmp/
 
-COPY conf/test.php $WP_FOLDER
-
-WORKDIR $WP_FOLDER
+WORKDIR $WP_PUBLICDIR
 CMD /tmp/configure.sh

@@ -7,10 +7,7 @@ server {
 	ssl_certificate_key /etc/ssl/private/nginx-selfsigned.key;
 	ssl_protocols TLSv1.3;
 
-	error_log /tmp/nginx/error.log debug;
-	access_log  /tmp/nginx/access.log;
-
-    root /var/www/html;
+    root ${NGINX_PUBLICDIR};
 
 	index index.php;
 

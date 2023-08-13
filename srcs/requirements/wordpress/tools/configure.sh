@@ -3,7 +3,7 @@
 wp core download --allow-root
 wp config create --dbname=$WP_DBNAME --dbuser=$WP_DBUSER --dbpass=$WP_DBPASSWORD --dbhost=mysql --skip-check --allow-root
 
-success=0
+success=0 #BETTER LOGIC NEEDED
 while [ $success -eq 0 ]; do
     wp db check --allow-root
     if [ $? -eq 0 ]
@@ -12,7 +12,7 @@ while [ $success -eq 0 ]; do
     fi
 done
 
-wp core install --url=localhost --title="WP-CLI" --admin_user=wpcli --admin_password=wpcli --admin_email=info@wp-cli.org --skip-email --allow-root
+wp core install --url=localhost --title="WP-CLI" --admin_user=$WP_ADMINNAME --admin_password=$WP_ADMINPWD --admin_email=$WP_ADMINEMAIL --skip-email --allow-root
 wp theme install inspiro --activate --allow-root
 
 cd /

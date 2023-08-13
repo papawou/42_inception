@@ -2,38 +2,45 @@ services:
   nginx:
     depends_on:
       - wordpress
-    build: ./requirements/nginx
+    build:
+      context: ./requirements/nginx
+      args:
+        - NGINX_PUBLICDIR=${PUBLICDIR}
     volumes:
-      - wordpress_folder:${PUBLIC_FOLDER}
-    ports:
-      - 443:443
+      - public_dir:${PUBLICDIR}
     links:
       - wordpress
+    ports:
+      - 443:443
+
   mariadb:
-    build: ./requirements/mariadb
     environment:
-      - MARIADB_ROOT_PASSWORD=root
+      - MARIADB_ROOT_PASSWORD=${DB_ADMINPWD}
       - MARIADB_DATABASE=${DB_NAME}
-      - MARIADB_USER=${DB_USER}
-      - MARIADB_PASSWORD=${DB_PASSWORD}
+      - MARIADB_USER=${DB_USERNAME}
+      - MARIADB_PASSWORD=${DB_USERPWD}
+    build:
+      context: ./requirements/mariadb
+
   wordpress:
+    environment:
+      - WP_ADMINNAME=${WP_ADMINNAME}
+      - WP_ADMINPWD=${WP_ADMINPWD}
+      - WP_ADMINEMAIL=${WP_ADMINEMAIL}
+      - WP_DBNAME=${DB_NAME}
+      - WP_DBUSER=${DB_USERNAME}
+      - WP_DBPASSWORD=${DB_USERPWD}
+      - WP_PUBLICDIR=${PUBLICDIR}
     depends_on:
       - mariadb
     build:
       context: ./requirements/wordpress
       args:
-        - WP_FOLDER=${PUBLIC_FOLDER}
-    stdin_open: true 
-    tty: true
-    environment:
-      - WP_DBNAME=${DB_NAME}
-      - WP_DBUSER=${DB_USER}
-      - WP_DBPASSWORD=${DB_PASSWORD}
-      - WP_FOLDER=${PUBLIC_FOLDER}
+        - WP_PUBLICDIR=${PUBLICDIR}
     volumes:
-      - wordpress_folder:${PUBLIC_FOLDER}
+      - public_dir:${PUBLICDIR}
     links:
       - mariadb:mysql
 
 volumes:
-  wordpress_folder:
+  public_dir:
