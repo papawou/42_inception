@@ -15,13 +15,14 @@ services:
       - 443:443
 
   mariadb:
-    environment:
-      - MARIADB_ROOT_PASSWORD=${DB_ADMINPWD}
-      - MARIADB_DATABASE=${DB_NAME}
-      - MARIADB_USER=${DB_USERNAME}
-      - MARIADB_PASSWORD=${DB_USERPWD}
     build:
       context: ./requirements/mariadb
+      args:
+        - MARIADB_DATABASE=${DB_NAME}
+        - MARIADB_USER=${DB_USERNAME}
+        - MARIADB_PASSWORD=${DB_USERPWD}
+    ports:
+      - 3306:3306
 
   wordpress:
     environment:

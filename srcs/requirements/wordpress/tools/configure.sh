@@ -1,4 +1,4 @@
-#bin/sh
+#!/bin/sh
 
 wp core download --allow-root
 wp config create --dbname=$WP_DBNAME --dbuser=$WP_DBUSER --dbpass=$WP_DBPASSWORD --dbhost=mysql --skip-check --allow-root

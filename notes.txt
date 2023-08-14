@@ -2,4 +2,5 @@ wordpress:
     normal user
 
 mariadb:
-    image
+#service mysql restart  //cli start background
+#mysqld_safe //start mysql service foreground
