@@ -1,6 +1,5 @@
 wordpress:
     normal user
 
-mariadb:
-#service mysql restart  //cli start background
-#mysqld_safe //start mysql service foreground
+docker restart on failure, raise error after a fail build
+rework waiting mysql

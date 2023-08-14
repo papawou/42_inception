@@ -21,8 +21,8 @@ services:
         - MARIADB_DATABASE=${DB_NAME}
         - MARIADB_USER=${DB_USERNAME}
         - MARIADB_PASSWORD=${DB_USERPWD}
-    ports:
-      - 3306:3306
+    volumes:
+      - db_dir:/var/lib/mysql
 
   wordpress:
     environment:
@@ -51,3 +51,4 @@ services:
 
 volumes:
   public_dir:
+  db_dir:

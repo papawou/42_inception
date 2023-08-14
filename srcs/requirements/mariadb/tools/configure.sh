@@ -12,4 +12,6 @@ EOF
 
 mariadb -uroot < ./configure.sql
 
+rm ./configure.sql
+
 service mysql stop

@@ -4,9 +4,7 @@ ARG MARIADB_USER
 ARG MARIADB_PASSWORD
 
 RUN apt-get update && apt-get install -y\
-    mariadb-server \
-    net-tools \
-    procps
+    mariadb-server
 
 COPY --chmod=777 /tools/configure.sh /tmp/configure.sh
 WORKDIR /tmp

@@ -3,7 +3,7 @@
 wp core download --allow-root
 wp config create --dbname=$WP_DBNAME --dbuser=$WP_DBUSER --dbpass=$WP_DBPASSWORD --dbhost=mysql --skip-check --allow-root
 
-success=0 #BETTER LOGIC NEEDED
+success=0
 while [ $success -eq 0 ]; do
     wp db check --allow-root
     if [ $? -eq 0 ]
