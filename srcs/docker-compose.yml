@@ -4,12 +4,12 @@ services:
     depends_on:
       - wordpress
     volumes:
-      - public_dir:${PUBLICDIR}
-    links:
-      - wordpress
+      -  ${VOLUME_DIR_WP}:${PUBLICDIR}
+    networks:
+      front:
     ports:
       - 443:443
-    restart: on-failure
+    restart: always
     build:
       context: ./requirements/nginx
       args:
@@ -18,30 +18,37 @@ services:
 
   mariadb:
     volumes:
-      - db_dir:/var/lib/mysql
-    restart: on-failure
+      - ${VOLUME_DIR_DB}:/var/lib/mysql
+    restart: always
     build:
       context: ./requirements/mariadb
       args:
         - MARIADB_DATABASE=${DB_NAME}
         - MARIADB_USER=${DB_USERNAME}
         - MARIADB_PASSWORD=${DB_USERPWD}
+    networks:
+      back:
+        aliases:
+          - mysql
 
   wordpress:
     volumes:
-      - public_dir:${PUBLICDIR}
-    links:
-      - mariadb:mysql
+      - ${VOLUME_DIR_WP}:${PUBLICDIR}
+    restart: always
+    networks:
+      front:
+      back:
     depends_on:
       - mariadb
     environment:
       - WP_DOMAINNAME=${DOMAINNAME}
-      - WP_PUBLICDIR=${PUBLICDIR} 
       - WP_ADMINNAME=${WP_ADMINNAME}
       - WP_ADMINPWD=${WP_ADMINPWD}
-      - WP_ADMINEMAIL=${WP_ADMINEMAIL}
-      
+      - WP_ADMINMAIL=${WP_ADMINMAIL}
       - WP_TITLE=${WP_TITLE}
+      - WP_USERNAME=${WP_USERNAME}
+      - WP_USERPWD=${WP_USERPWD}
+      - WP_USERMAIL=${WP_USERMAIL}
     build:
       context: ./requirements/wordpress
       args:
@@ -50,6 +57,22 @@ services:
         - WP_DBUSER=${DB_USERNAME}
         - WP_DBPASSWORD=${DB_USERPWD}
 
-volumes:
-  public_dir:
-  db_dir:
+networks:
+  front:
+  back:
+
+# volumes:
+#   public_vol:
+#     name: public_vol
+#     driver: local
+#     driver_opts:
+#       type: none
+#       o: bind
+#       device: ${VOLUME_DIR_WP}
+#   db_vol:
+#     name: db_vol
+#     driver: local
+#     driver_opts:
+#       type: none
+#       o: bind
+#       device: ${VOLUME_DIR_DB}

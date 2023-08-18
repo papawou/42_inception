@@ -1,5 +1,4 @@
-wordpress:
-    normal user
+test worduser
 
 docker network without links
 docker restart on failure, raise error after a fail build
