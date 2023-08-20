@@ -4,7 +4,7 @@ services:
     depends_on:
       - wordpress
     volumes:
-      -  ${VOLUME_DIR_WP}:${PUBLICDIR}
+      -  public_vol:${PUBLICDIR}
     networks:
       front:
     ports:
@@ -18,7 +18,7 @@ services:
 
   mariadb:
     volumes:
-      - ${VOLUME_DIR_DB}:/var/lib/mysql
+      - db_vol:/var/lib/mysql
     restart: always
     build:
       context: ./requirements/mariadb
@@ -33,7 +33,7 @@ services:
 
   wordpress:
     volumes:
-      - ${VOLUME_DIR_WP}:${PUBLICDIR}
+      - public_vol:${PUBLICDIR}
     restart: always
     networks:
       front:
@@ -61,18 +61,16 @@ networks:
   front:
   back:
 
-# volumes:
-#   public_vol:
-#     name: public_vol
-#     driver: local
-#     driver_opts:
-#       type: none
-#       o: bind
-#       device: ${VOLUME_DIR_WP}
-#   db_vol:
-#     name: db_vol
-#     driver: local
-#     driver_opts:
-#       type: none
-#       o: bind
-#       device: ${VOLUME_DIR_DB}
+volumes:
+  public_vol:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ${VOLUME_DIR_WP}
+  db_vol:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ${VOLUME_DIR_DB}
