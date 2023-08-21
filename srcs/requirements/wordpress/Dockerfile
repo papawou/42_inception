@@ -20,7 +20,8 @@ RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli
     && chmod +x wp-cli.phar \
     && mv wp-cli.phar /usr/local/bin/wp
 
-COPY --chmod=777 ./tools/configure.sh /tmp/
+COPY ./tools/configure.sh /tmp/
+RUN chmod 777 /tmp/configure.sh
 
 WORKDIR $WP_PUBLICDIR
 RUN wp core download --allow-root

@@ -6,7 +6,8 @@ ARG MARIADB_PASSWORD
 RUN apt-get update && apt-get install -y\
     mariadb-server
 
-COPY --chmod=777 /tools/configure.sh /tmp/configure.sh
+COPY /tools/configure.sh /tmp/configure.sh
+RUN chmod 777 /tmp/configure.sh
 WORKDIR /tmp
 RUN ./configure.sh
 
