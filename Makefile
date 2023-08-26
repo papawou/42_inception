@@ -1,19 +1,22 @@
+NAME := inception
 SRC := ./srcs/docker-compose.yml
+
+DOCKER_COMPOSE_CMD := docker compose -f ${SRC} -p ${NAME}
 
 all: down build up
 
 build:
-	docker-compose -f ${SRC} build
+	${DOCKER_COMPOSE_CMD} build 
 
 up:
-	docker-compose -f ${SRC} up
+	${DOCKER_COMPOSE_CMD} up
 
 down:
-	docker-compose -f ${SRC} down
+	${DOCKER_COMPOSE_CMD} down
 
-fclean: down
-	docker system prune --volumes -a -f
+clean:
+	${DOCKER_COMPOSE_CMD} down -v
 
-re : fclean all
+re : clean all
 
 .PHONY : all clean fclean re
